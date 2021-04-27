@@ -1,0 +1,28 @@
+server:
+  port: 8445
+  ssl:
+#    key-store: classpath: <<.p12File>>
+#    key-store-password: <<secret of keystore>>
+    key-store-type: pkcs12
+    key-store-alias: https
+spring:
+  logging:
+    level:
+      org.springframework.security: DEBUG
+  security:
+    oauth2:
+      client:
+        registration:
+          idsvr:
+#            client-name: <<openid client name>>
+#            client-id: <<openid client id>>
+#            client-secret: <<openid client>>
+            authorization-grant-type: authorization_code
+#            redirect-uri: <<redirect URL>>
+            scope: openid,profile
+        provider:
+          idsvr:
+#            issuer-uri: <<IDP issuer URL to get all openid configuration>>
+
+
+
