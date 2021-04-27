@@ -1,7 +1,7 @@
 # springbootoauth
 Spring boot security integration for OIDC(OAUTH2) authorization code flow  
 
-This is intgerate spring application with external identity provider to authenticate users for spring application.
+This is to intgerate spring application with external identity provider to authenticate users for spring application.
 
 This leverages spring security module for integration.
 
